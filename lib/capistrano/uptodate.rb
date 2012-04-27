@@ -1,4 +1,4 @@
-Capistrano::Configuration.instance.load do
+Capistrano::Configuration.instance(true).load do
 
   scm               = fetch(:uptodate_scm, :git)
   scm_binary        = fetch(:uptodate_scm_bynary, 'git')
